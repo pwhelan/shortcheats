@@ -1,0 +1,10 @@
+[
+	{"shortcut": "ctrl+Page_Up", "text": "Jump to Next tab"},
+	{"shortcut": "ctrl+Shift+Page_Down", "text": "Jump to Previous tab"},
+	{"shortcut": "alt+Left", "text": "History back"},
+	{"shortcut": "alt+Right", "text": "History forward"},
+	{"shortcut": "ctrl+j", "text": "Open downloads"},
+	{"shortcut": "F12", "text": "Open developer tools"},
+	{"shortcut": "ctrl+0", "text": "Reset Zoom"},
+	{"shortcut": "ctrl+h", "text": "Open history"}
+]

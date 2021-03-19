@@ -1,0 +1,4 @@
+[
+	{"shortcut": "ctrl+Shift+Tab / ctrl+Page_Down", "text": "Previous chat"},
+	{"shortcut": "ctrl+Tab / ctrl+Page_Up", "text": "Next chat"}
+]

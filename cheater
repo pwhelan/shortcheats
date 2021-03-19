@@ -1,0 +1,16 @@
+#!/bin/bash
+
+KEYS=$(mktemp)
+export KEYS
+
+DIR=$(dirname $0)
+
+rofi -show shortcut -modi shortcut:$DIR/cheats
+CMD=$(cat $KEYS)
+WINDOWID=$(echo $CMD | cut -f1 -d' ')
+CHEAT=$(echo $CMD | cut -f2 -d' ')
+
+# echo "WINDOW: "$WINDOWID" SHORTCUT: "$CHEAT
+
+xdotool windowfocus $WINDOWID windowactivate $WINDOWID key --window $WINDOWID $CHEAT
+rm -f $KEYS

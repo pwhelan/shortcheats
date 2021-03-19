@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+XPROP_ID=$(xprop -root 32x '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)
+WINDOW_PID=$(xprop -root 32x '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)
+APP_NAME=$(xprop -id $XPROP_ID WM_CLASS | awk -F '"' '{print $2}')
+
+#echo "XPROP ID": $XPROP_ID
+#echo "APP NAME: "$APP_NAME
+#echo "PID: "$WINDOW_PID
+
+DIR=$(dirname $0)
+
+if [ x"$1" == "x" ]; then
+	JSON=$DIR"/"$APP_NAME".json"
+	if [ -f "$JSON" ]; then
+		jq -r '.[]|.shortcut + " " + .text' < $JSON
+	else
+		echo "Unknown app: "$APP_NAME
+	fi
+else
+	echo $XPROP_ID $1 > $KEYS
+fi
