@@ -1,6 +1,8 @@
 [
-	{"shortcut": "ctrl+Page_Up", "text": "Jump to Next tab"},
-	{"shortcut": "ctrl+Shift+Page_Down", "text": "Jump to Previous tab"},
+	{"shortcut": "ctrl+Page_Up", "text": "Jump to Previous tab"},
+	{"shortcut": "ctrl+Page_Down", "text": "Jump to Next tab"},
+	{"shortcut": "ctrl+Shift+Page_Up", "text": "Move tab to the left"},
+	{"shortcut": "ctrl+Shift+Page_Down", "text": "Move tab to the right"},
 	{"shortcut": "alt+Left", "text": "History back"},
 	{"shortcut": "alt+Right", "text": "History forward"},
 	{"shortcut": "ctrl+j", "text": "Open downloads"},
