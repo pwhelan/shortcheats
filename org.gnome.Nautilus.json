@@ -1,0 +1,6 @@
+[
+	{"shortcut": "alt+Left", "text": "Back"},
+	{"shortcut": "alt+Right", "text": "Forward"},
+	{"shortcut": "alt+Up", "text": "Up"},
+	{"shortcut": "ctrl+b", "text": "Bookmark"}
+]
